@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link } from 'react-router-dom'
+import './App.css'
 
-function App() {
+function App({ children }) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul style={{ width: '100vw' }}>
+        <li>
+          <Link to="/geolocation">geolocation</Link>
+        </li>
+        <li>
+          <Link to="/offline">offline</Link>
+        </li>
+        <li>
+          <Link to="/camera">camera</Link>
+        </li>
+        <li>
+          <Link to="/reachability">reachability</Link>
+        </li>
+        <li>
+          <Link to="/device-position">device-position</Link>
+        </li>
+      </ul>
+      <div>{children}</div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
