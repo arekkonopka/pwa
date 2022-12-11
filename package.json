@@ -2,7 +2,7 @@
   "name": "pwa",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://arekkonopka.github.io/react-gh-pages",
+  "homepage": "https://arekkonopka.github.io/pwa",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
