@@ -15,7 +15,7 @@ const DevicePostion = () => {
   }, [coords?.speed])
 
   if (isLoading) {
-    return <App>Loading...</App>
+    return <App>Loading....</App>
   }
   return (
     <App>
