@@ -13,10 +13,12 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <App />,
   },
   {
     path: '/geolocation',
     element: <Geolocation />,
+    errorElement: <>error</>,
   },
   {
     path: '/offline',

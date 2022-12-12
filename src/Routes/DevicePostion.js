@@ -19,6 +19,10 @@ const DevicePostion = () => {
   }
   return (
     <App>
+      <h4>
+        If no value returned, it means that your device doesn't handle this
+        functionality
+      </h4>
       <p>
         <b>latitude</b>: Returns the position's latitude in decimal degrees:{' '}
         <b>{coords?.latitude}</b>

@@ -1,7 +1,25 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
 
 function App({ children }) {
+  const setAlertMessageOffline = () => {
+    alert('you are offline')
+  }
+  const setAlertMessageOnline = () => {
+    alert('your are online')
+    document.location.reload()
+  }
+  useEffect(() => {
+    window.addEventListener('offline', setAlertMessageOffline)
+    window.addEventListener('online', setAlertMessageOnline)
+
+    return () => {
+      window.removeEventListener('offline', setAlertMessageOffline)
+      window.removeEventListener('online', setAlertMessageOnline)
+    }
+  }, [])
+
   return (
     <div className="App">
       <ul style={{ width: '100vw' }}>
