@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/pwa.github.io/static/css/main.7825383c.css",
-    "main.js": "/pwa.github.io/static/js/main.b27c870e.js",
-    "index.html": "/pwa.github.io/index.html",
-    "main.7825383c.css.map": "/pwa.github.io/static/css/main.7825383c.css.map",
-    "main.b27c870e.js.map": "/pwa.github.io/static/js/main.b27c870e.js.map"
+    "main.css": "./static/css/main.7825383c.css",
+    "main.js": "./static/js/main.b27c870e.js",
+    "index.html": "./index.html",
+    "main.7825383c.css.map": "./static/css/main.7825383c.css.map",
+    "main.b27c870e.js.map": "./static/js/main.b27c870e.js.map"
   },
   "entrypoints": [
     "static/css/main.7825383c.css",
