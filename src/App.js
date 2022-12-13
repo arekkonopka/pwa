@@ -7,8 +7,7 @@ function App({ children }) {
     alert('you are offline')
   }
   const setAlertMessageOnline = () => {
-    alert('your are online')
-    document.location.reload()
+    alert('you are online')
   }
   useEffect(() => {
     window.addEventListener('offline', setAlertMessageOffline)
