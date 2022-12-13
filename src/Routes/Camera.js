@@ -5,12 +5,12 @@ import App from '../App'
 const Camera = () => {
   const [isScan, setIsScan] = useState(true)
   const [data, setData] = useState()
-  const [cameraDirection, setCameraDricetion] = useState('front')
+  const [cameraDirection, setCameraDricetion] = useState('user')
 
   const onClickCameraDirection = () => {
-    cameraDirection === 'front'
-      ? setCameraDricetion('rear')
-      : setCameraDricetion('front')
+    cameraDirection === 'user'
+      ? setCameraDricetion('enviroment')
+      : setCameraDricetion('user')
   }
 
   return (
