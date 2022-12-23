@@ -18,9 +18,9 @@ const DevicePostion = () => {
   return (
     <App>
       <h2>position coords</h2>
-      <h3>alpha: {coords[0] ?? 0}</h3>
-      <h3>beta: {coords[1] ?? 0}</h3>
-      <h3>gamma: {coords[2] ?? 0}</h3>
+      <h3>alpha: {coords[0]?.toFixed(2) ?? 0}</h3>
+      <h3>beta: {coords[1]?.toFixed(2) ?? 0}</h3>
+      <h3>gamma: {coords[2]?.toFixed(2) ?? 0}</h3>
     </App>
   )
 }
